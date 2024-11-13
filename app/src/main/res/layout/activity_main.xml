@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/ios_black"
     tools:context=".MainActivity">
 
     <TableLayout
@@ -40,27 +41,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/reset_button" />
+                    android:backgroundTint="@color/ios_light_gray"
+                    android:text="@string/reset_button"
+                    android:textColor="@color/ios_black"
+                    app:cornerRadius="48dp" />
 
                 <Button
                     android:id="@+id/switch_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/switch_button" />
+                    android:backgroundTint="@color/ios_light_gray"
+                    android:text="@string/switch_button"
+                    android:textColor="@color/ios_black" />
 
                 <Button
                     android:id="@+id/percent_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/percent_button" />
+                    android:backgroundTint="@color/ios_light_gray"
+                    android:text="@string/percent_button"
+                    android:textColor="@color/ios_black" />
 
                 <Button
                     android:id="@+id/divide_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_orange"
                     android:text="@string/divide_button" />
 
             </LinearLayout>
@@ -80,6 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/seven_button" />
 
                 <Button
@@ -87,6 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/eight_button" />
 
                 <Button
@@ -94,6 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/nine_button" />
 
                 <Button
@@ -101,6 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_orange"
                     android:text="@string/multiply_button" />
             </LinearLayout>
         </TableRow>
@@ -119,6 +132,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/four_button" />
 
                 <Button
@@ -126,6 +140,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/five_button" />
 
                 <Button
@@ -133,6 +148,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/six_button" />
 
                 <Button
@@ -140,6 +156,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_orange"
                     android:text="@string/subtract_button" />
             </LinearLayout>
         </TableRow>
@@ -158,6 +175,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/one_button" />
 
                 <Button
@@ -165,6 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/two_button" />
 
                 <Button
@@ -172,6 +191,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/three_button" />
 
                 <Button
@@ -179,6 +199,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_orange"
                     android:text="@string/add_button" />
             </LinearLayout>
         </TableRow>
@@ -194,23 +215,26 @@
 
                 <Button
                     android:id="@+id/zero_button"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/zero_button" />
 
                 <Button
                     android:id="@+id/dot_button"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/dot_button" />
 
                 <Button
                     android:id="@+id/equal_button"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/ios_orange"
                     android:text="@string/equal_button" />
             </LinearLayout>
         </TableRow>

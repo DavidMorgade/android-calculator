@@ -3,6 +3,6 @@
         android:shape="oval">
         <solid android:color="@color/ios_light_gray" android:background="@color/ios_light_gray"  /> <!-- Background color -->
         <size
-            android:width="100dp"
-            android:height="100dp" /> <!-- Ensures a perfect circle -->
+            android:width="20dp"
+            android:height="20dp" /> <!-- Ensures a perfect circle -->
 </shape>

@@ -36,40 +36,40 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/reset_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_light_gray"
+                    android:background="@drawable/circular_button_light_gray"
                     android:text="@string/reset_button"
                     android:textColor="@color/ios_black"
                     app:cornerRadius="48dp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/switch_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_light_gray"
+                    android:background="@drawable/circular_button_light_gray"
                     android:text="@string/switch_button"
                     android:textColor="@color/ios_black" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/percent_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_light_gray"
+                    android:background="@drawable/circular_button_light_gray"
                     android:text="@string/percent_button"
                     android:textColor="@color/ios_black" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/divide_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_orange"
+                    android:background="@drawable/circular_button_orange"
                     android:text="@string/divide_button" />
 
             </LinearLayout>
@@ -84,36 +84,36 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/seven_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_dark_gray"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:text="@string/seven_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/eight_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_dark_gray"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:text="@string/eight_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/nine_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_dark_gray"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:text="@string/nine_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/multiply_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_orange"
+                    android:background="@drawable/circular_button_orange"
                     android:text="@string/multiply_button" />
             </LinearLayout>
         </TableRow>
@@ -127,36 +127,36 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/four_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_dark_gray"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:text="@string/four_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/five_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_dark_gray"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:text="@string/five_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/six_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_dark_gray"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:text="@string/six_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/subtract_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_orange"
+                    android:background="@drawable/circular_button_orange"
                     android:text="@string/subtract_button" />
             </LinearLayout>
         </TableRow>
@@ -170,36 +170,37 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/one_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/one_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/two_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_dark_gray"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:text="@string/two_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/three_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_dark_gray"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:text="@string/three_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/add_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_orange"
+                    android:background="@drawable/circular_button_orange"
                     android:text="@string/add_button" />
             </LinearLayout>
         </TableRow>
@@ -213,7 +214,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/zero_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -221,20 +222,20 @@
                     android:backgroundTint="@color/ios_dark_gray"
                     android:text="@string/zero_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/dot_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_dark_gray"
+                    android:background="@drawable/circular_button_dark_gray"
                     android:text="@string/dot_button" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/equal_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/ios_orange"
+                    android:background="@drawable/circular_button_orange"
                     android:text="@string/equal_button" />
             </LinearLayout>
         </TableRow>

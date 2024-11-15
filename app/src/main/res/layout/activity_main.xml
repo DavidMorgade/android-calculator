@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text=""
         android:id="@+id/solution"
         android:textSize="32dp"
         android:textAlignment="textEnd"

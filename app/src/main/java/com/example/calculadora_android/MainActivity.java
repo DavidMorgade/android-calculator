@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -72,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (btnText.equals("=")) {
             // Calcular la solución
             solution.setText(result.getText());
+            result.setText("0");
             return;
         }
 
@@ -88,12 +92,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             dataToCalculate = dataToCalculate + btnText;
         }
 
-
         solution.setText(dataToCalculate);
+
+        String finalResult = getResult(dataToCalculate);
+
+        if (!finalResult.equals("Err")) {
+            result.setText(finalResult);
+        }
 
     }
 
     String getResult(String data) {
-        return "Calculated";
+        try {
+            Context context = Context.enter();
+            context.setOptimizationLevel(-2);
+            Scriptable scriptable = context.initStandardObjects();
+            String finalResult = context.evaluateString(scriptable, data, "JavaScript", 0, null).toString();
+            if(finalResult.endsWith(".0")) {
+                finalResult = finalResult.replace(".0", "");
+            }
+            return finalResult;
+        } catch (Exception e) {
+            return "Err";
+        }
     }
+
+
 }

@@ -3,6 +3,7 @@ package com.example.calculadora_android;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -99,9 +100,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         String finalResult = getResult(dataToCalculate);
 
-        if (finalResult.equals("Infinity")) {
-            finalResult = "Cannot divide by zero";
-            result.setText(finalResult);
+        if (finalResult.equals("Infinity") || finalResult.equals("NaN")) {
+            // Mensaje que se muestra cuando se divide por cero en una toast
+            Toast toast = Toast.makeText(getApplicationContext(), "Cannot divide by zero", Toast.LENGTH_SHORT);
+            toast.show();
+            result.setText("0");
             solution.setText("");
             return;
         }

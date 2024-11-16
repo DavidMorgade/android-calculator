@@ -99,6 +99,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         String finalResult = getResult(dataToCalculate);
 
+        if (finalResult.equals("Infinity")) {
+            finalResult = "Cannot divide by zero";
+            result.setText(finalResult);
+            solution.setText("");
+            return;
+        }
+
         if (!finalResult.equals("Err")) {
             result.setText(finalResult);
         }

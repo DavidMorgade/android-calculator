@@ -4,9 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Scriptable;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -14,6 +11,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
+
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -75,8 +75,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (btnText.equals("=")) {
             // Calcular la solución
             solution.setText(result.getText());
-            result.setText("0");
             return;
+        }
+
+        if (btnText.equals("X")) {
+            btnText = "*";
         }
 
         if (btnText.equals("±")) {
@@ -108,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             context.setOptimizationLevel(-2);
             Scriptable scriptable = context.initStandardObjects();
             String finalResult = context.evaluateString(scriptable, data, "JavaScript", 0, null).toString();
-            if(finalResult.endsWith(".0")) {
+            if (finalResult.endsWith(".0")) {
                 finalResult = finalResult.replace(".0", "");
             }
             return finalResult;
